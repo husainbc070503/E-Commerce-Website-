@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce Website</title>
+
+    <!-- CSS FILE -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- FONT AWESOME -->
+    <script src="https://kit.fontawesome.com/6ccdd39db5.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="images/logo.png" class="logo" width="130px">
+            </div>
+            <div class="icons">
+                <i class="fa-solid fa-bars" onclick="openMenu()" id="menu-icon"></i>
+                <i class="fa-solid fa-close" onclick="closeMenu()" id="close-icon"></i>
+            </div>
+            <ul id="lists">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html" target="_self">Products</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <i class="fa-solid fa-cart-shopping" onclick="openCart()"></i>
+        </nav>
+        <div class="content">
+            <div class="left">
+                <h1>Give your workout a new style!!</h1>
+                <p>Success isn't always about greatness. It's about consistency. Consistent hard work gains success.
+                    Greatenss will come.</p>
+                <a href="#" class="btn">Explore Now <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+            <div class="right">
+                <img src="images/image1.png" class="image">
+            </div>
+        </div>
+    </header>
+
+    <!-- FEATURED CATEGORIES -->
+    <div class="container">
+        <div class="categories">
+            <h1>Categories</h1>
+            <div class="row">
+                <div class="col-3">
+                    <img src="images/category-1.jpg" class="items">
+                </div>
+                <div class="col-3">
+                    <img src="images/category-2.jpg" class="items">
+                </div>
+                <div class="col-3">
+                    <img src="images/category-3.jpg" class="items">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FEATURED PRODUCTS -->
+    <div class="container">
+        <div class="products">
+            <h1>Featured Products</h1>
+            <div class="row">
+                <div class="col-4">
+                    <img src="images/product-1.jpg">
+                    <h4>Red Printed T-Shirt</h4>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <p>$50.00</p>
+                </div>
+                <div class="col-4">
+                    <img src="images/product-2.jpg">
+                    <h4>Black Shoes</h4>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p>$50.00</p>
+                </div>
+                <div class="col-4">
+                    <img src="images/product-3.jpg">
+                    <h4>Men's Trousers</h4>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <p>$50.00</p>
+                </div>
+                <div class="col-4">
+                    <img src="images/product-4.jpg">
+                    <h4>Blue Printed T-Shirt</h4>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <p>$50.00</p>
+                </div>
+            </div>
+            <h1>Latest Products</h1>
+            <div class="row">
+                <div class="col-4">
+                    <img src="images/product-5.jpg">
+                    <h4>Shoes</h4>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <p>$50.00</p>
+                </div>
+                <div class="col-4">
+                    <img src="images/product-6.jpg">
+                    <h4>Men's T-Shirt</h4>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <p>$50.00</p>
+                </div>
+                <div class="col-4">
+                    <img src="images/product-7.jpg">
+                    <h4>Socks</h4>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <p>$50.00</p>
+                </div>
+                <div class="col-4">
+                    <img src="images/product-8.jpg">
+                    <h4>Fossil Watch</h4>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p>$50.00</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-4">
+                    <img src="images/product-9.jpg">
+                    <h4>Soadster Watch</h4>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p>$50.00</p>
+                </div>
+                <div class="col-4">
+                    <img src="images/product-10.jpg">
+                    <h4>Black Shoes</h4>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <p>$50.00</p>
+                </div>
+                <div class="col-4">
+                    <img src="images/product-11.jpg">
+                    <h4>Shoes</h4>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <p>$50.00</p>
+                </div>
+                <div class="col-4">
+                    <img src="images/product-12.jpg">
+                    <h4>Trouser's</h4>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <p>$50.00</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- EXCLUSIVE PRODUCTS -->
+    <div class="container">
+        <div class="offer">
+            <div class="row">
+                <div class="col-2">
+                    <img src="images/exclusive.png" alt="">
+                </div>
+                <div class="col-2">
+                    <h4>Exculsively Available on Red Store</h4>
+                    <h1>Smart Band 4</h1>
+                    <small>
+                        The Mi Smart Band 4 features a 40% larger AMOLED color full-touch display with adjustable
+                        brightness, so everything is claer as can be. <br>
+                    </small>
+                    <a href="#">BUY NOW <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- TESTIMONIALS -->
+    <div class="container">
+        <h1>Reviews</h1>
+        <div class="testimonials">
+            <div class="row">
+                <div class="col-3">
+                    <div class="image">
+                        <img src="images/user-1.png">
+                    </div>
+                    <h2 class="name">Sean Parker</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto laboriosam eum tempore natus,
+                        eaque eveniet error saepe magni ipsum? Autem dolore labore perspiciatis nemo quibusdam voluptate
+                        mollitia aperiam at veritatis.</p>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="image">
+                        <img src="images/user-2.png">
+                    </div>
+                    <h2 class="name">Mark Smith</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto laboriosam eum tempore natus,
+                        eaque eveniet error saepe magni ipsum? Autem dolore labore perspiciatis nemo quibusdam voluptate
+                        mollitia aperiam at veritatis.</p>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="image">
+                        <img src="images/user-3.png">
+                    </div>
+                    <h2 class="name">Mabel Joe</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto laboriosam eum tempore natus,
+                        eaque eveniet error saepe magni ipsum? Autem dolore labore perspiciatis nemo quibusdam voluptate
+                        mollitia aperiam at veritatis.</p>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- BRANDS -->
+    <div class="container">
+        <h1>Our Brands</h1>
+        <div class="brands">
+            <div class="row">
+                <div class="col-5"><img src="images/logo-godrej.png" alt=""></div>
+                <div class="col-5"><img src="images/logo-coca-cola.png" alt=""></div>
+                <div class="col-5"><img src="images/logo-philips.png" alt=""></div>
+                <div class="col-5"><img src="images/logo-oppo.png" alt=""></div>
+                <div class="col-5"><img src="images/logo-paypal.png" alt=""></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <img src="images/app-store.png">
+                <p>Download our app from playstore</p>
+            </div>
+            <div class="footer-col-2">
+                <img src="images/logo-white.png">
+                <p>Our Purpose is to sustainably make the pleasure and benefits of sports accessible to the many</p>
+            </div>
+            <div class="footer-col-3">
+                <h2>Useful Links</h2>
+                <ul class="lists">
+                    <li>Coupons</li>
+                    <li>Blog Post</li>
+                    <li>Return Policy</li>
+                    <li>Join Affiliate</li>
+                </ul>
+            </div>
+            <div class="footer-col-4">
+                <h2>Follow Us</h2>
+                <ul>
+                    <li>Facebook</li>
+                    <li>Twitter</li>
+                    <li>Instagram</li>
+                    <li>You Tube</li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright &copy; Red Store - 2022</p>
+        </div>
+    </footer>
+
+    <!-- SCROLL BTN -->
+    <div class="scroll" id="scroll-btn">
+        <div class="scroll-btn"></div>
+    </div>
+
+
+    <script>
+
+        var navbar = document.querySelector('.navbar')
+        var scroll_btn = document.getElementById('scroll-btn')
+
+        window.onscroll = () => {
+            if (window.scrollY >= 10) {
+                navbar.style.backgroundColor = "#fff";
+                scroll_btn.style.opacity = '1';
+            }
+            else {
+                navbar.style.backgroundColor = "";
+                scroll_btn.style.opacity = '0';
+            }
+        }
+
+        var lists = document.getElementById('lists')
+        var menu_icon = document.getElementById('menu-icon')
+        var close_icon = document.getElementById('close-icon')
+
+        function openMenu() {
+            lists.style.height = "240px"
+            menu_icon.style.display = "none"
+            close_icon.style.display = "inline-block"
+        }
+
+        function closeMenu() {
+            lists.style.height = "0"
+            menu_icon.style.display = "inline-block"
+            close_icon.style.display = "none"
+        }
+
+        scroll_btn.onclick = () => {
+            document.documentElement.scrollTop = 0;
+        }
+
+        function openCart() {
+            window.open('cart.html')
+        }
+
+    </script>
+</body>
+
+</html>

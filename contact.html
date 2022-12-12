@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - E-Commerce Website</title>
+
+    <!-- CSS FILE -->
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        .content {
+            padding: 120px 10% 0;
+        }
+
+        .form {
+            width: 400px;
+            height: auto;
+            background-color: #3C4048;
+            border-radius: 20px;
+            padding: 22px;
+            box-shadow: 0 2px 14px #6B728E;
+        }
+
+        .form form {
+            width: 100%;
+            display: block;
+        }
+
+        .form .input-group {
+            display: block;
+            margin: 22px 0;
+            width: 100%;
+            position: relative;
+        }
+
+        .input-group input {
+            width: 100%;
+            padding: 14px 20px;
+            border: 0;
+            outline: 0;
+            border-radius: 8px;
+            background: #EAEAEA;
+        }
+
+        .input-group label {
+            position: absolute;
+            top: 50%;
+            left: 20px;
+            transform: translateY(-50%);
+            color: white;
+            transition: all 0.4s;
+            color: #191919;
+            cursor: text;
+        }
+
+        .input-group input:focus~label,
+        .input-group input:valid~label {
+            top: -10px;
+            left: 0;
+            color: #eaeaea;
+            font-size: 10px;
+        }
+
+        .button {
+            text-align: center;
+            display: block;
+            width: 100%;
+        }
+
+        .button button {
+            background: #00FFAB;
+            border: 0;
+            outline: 0;
+            padding: 8px 15px;
+            margin: 0 12px;
+            font-weight: bold;
+            cursor: pointer;
+            border-radius: 8px;
+        }
+
+        .button button:last-child {
+            background: #FF1E00;
+        }
+
+        .address {
+            height: 120px;
+        }
+
+        @media only screen and (max-width:800px) {
+            header {
+                height: 120vh;
+            }
+
+            .form {
+                width: 100%;
+                padding-bottom: 30px;
+            }
+        }
+    </style>
+
+    <!-- FONT AWESOME -->
+    <script src="https://kit.fontawesome.com/6ccdd39db5.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="images/logo.png" class="logo" width="130px">
+            </div>
+            <div class="icons">
+                <i class="fa-solid fa-bars" onclick="openMenu()" id="menu-icon"></i>
+                <i class="fa-solid fa-close" onclick="closeMenu()" id="close-icon"></i>
+            </div>
+            <ul id="lists">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html" target="_self">Products</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <i class="fa-solid fa-cart-shopping" onclick="openCart()"></i>
+        </nav>
+        <div class="content">
+            <div class="left">
+                <h1>Contact Us</h1>
+                <div class="form">
+                    <form action="#">
+                        <div class="input-group">
+                            <input type="text" id="name" autofocus required>
+                            <label for="name">Name</label>
+                        </div>
+                        <div class="input-group">
+                            <input type="email" id="email" required>
+                            <label for="email">Email</label>
+                        </div>
+                        <div class="input-group">
+                            <input type="tel" id="tel" required>
+                            <label for="tel">Contact No.</label>
+                        </div>
+                        <div class="input-group">
+                            <input type="text" class="address" id="addr" required>
+                            <label for="addr">Address</label>
+                        </div>
+                        <div class="button">
+                            <button type="submit">Submit</button>
+                            <button type="reset">Reset</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="right">
+                <img src="images/image1.png" class="image">
+            </div>
+        </div>
+    </header>
+
+    <!-- SCROLL BTN -->
+    <div class="scroll" id="scroll-btn">
+        <div class="scroll-btn"></div>
+    </div>
+
+
+    <script>
+
+        var navbar = document.querySelector('.navbar')
+        var scroll_btn = document.getElementById('scroll-btn')
+
+        window.onscroll = () => {
+            if (window.scrollY >= 10) {
+                navbar.style.backgroundColor = "#fff";
+                scroll_btn.style.opacity = '1';
+            }
+            else {
+                navbar.style.backgroundColor = "";
+                scroll_btn.style.opacity = '0';
+            }
+        }
+
+        var lists = document.getElementById('lists')
+        var menu_icon = document.getElementById('menu-icon')
+        var close_icon = document.getElementById('close-icon')
+
+        function openMenu() {
+            lists.style.height = "240px"
+            menu_icon.style.display = "none"
+            close_icon.style.display = "inline-block"
+        }
+
+        function closeMenu() {
+            lists.style.height = "0"
+            menu_icon.style.display = "inline-block"
+            close_icon.style.display = "none"
+        }
+
+        scroll_btn.onclick = () => {
+            document.documentElement.scrollTop = 0;
+        }
+
+        function openCart() {
+            window.open('cart.html')
+        }
+
+    </script>
+</body>
+
+</html>

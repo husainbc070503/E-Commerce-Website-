@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - E-Commerce Website</title>
+
+    <!-- CSS FILE -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- FONT AWESOME -->
+    <script src="https://kit.fontawesome.com/6ccdd39db5.js" crossorigin="anonymous"></script>
+
+    <style>
+        .about {
+            padding: 20px 0 50px 0;
+        }
+
+        .about .col-2 {
+            width: 500px;
+            flex-basis: 50%;
+        }
+
+        .col-2 img {
+            width: 80%;
+            border-radius: 30px;
+            object-fit: cover;
+            box-shadow: 0 0 20px #AEBDCA;
+        }
+
+        .col-2 h4 {
+            font-weight: 400;
+            font-size: 25px;
+            color: #AEBDCA;
+            margin-bottom: -4px;
+        }
+
+        .col-2 h2 {
+            margin: 20px 0;
+            font-size: 40px;
+        }
+
+        .col-2 h2 span {
+            color: #FD841F;
+        }
+
+        .col-2 p {
+            font-size: 12px;
+            line-height: 1.5rem;
+        }
+
+        @media only screen and (max-width:800px) {
+            .about .col-2 {
+                width: 100%;
+                text-align: justify;
+            }
+
+            .col-2 .image {
+                text-align: center;
+            }
+
+            .col-2 h4 {
+                margin-top: 25px;
+            }
+
+            .col-2 h2 {
+                font-size: 34px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="images/logo.png" class="logo" width="130px">
+            </div>
+            <div class="icons">
+                <i class="fa-solid fa-bars" onclick="openMenu()" id="menu-icon"></i>
+                <i class="fa-solid fa-close" onclick="closeMenu()" id="close-icon"></i>
+            </div>
+            <ul id="lists">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html" target="_self">Products</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <i class="fa-solid fa-cart-shopping" onclick="openCart()"></i>
+        </nav>
+        <div class="content">
+            <div class="left">
+                <h1>Give your workout a new style!!</h1>
+                <p>Success isn't always about greatness. It's about consistency. Consistent hard work gains success.
+                    Greatenss will come.</p>
+                <a href="#" class="btn">Explore Now <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+            <div class="right">
+                <img src="images/image1.png" class="image">
+            </div>
+        </div>
+    </header>
+
+    <!-- ABOUT US -->
+    <div class="container">
+        <div class="about">
+            <h1>About Us</h1>
+            <div class="row">
+                <div class="col-2">
+                    <div class="image">
+                        <img src="images/Husain.png">
+                    </div>
+                </div>
+                <div class="col-2">
+                    <h4>Husain Champawala</h4>
+                    <h2>I'm a <span>Web</span> Developer</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium veniam officiis, quibusdam
+                        distinctio inventore suscipit, alias ipsum mollitia, magnam debitis quod commodi a rem aut amet
+                        vel molestiae perspiciatis incidunt id. Hic perferendis ducimus quibusdam aut sint consequuntur
+                        dolores itaque ab, modi quaerat laudantium culpa ipsa libero cupiditate aliquid sunt id sit
+                        inventore, ullam tempore similique error maxime! Eum enim expedita veritatis quo adipisci iste
+                        officiis, dolore temporibus ipsam excepturi soluta voluptate omnis veniam architecto eligendi
+                        atque recusandae itaque quibusdam, eaque neque earum quae. Eum magnam praesentium nesciunt
+                        exercitationem itaque, possimus sapiente tempora, aliquid, enim ullam consequuntur quos
+                        explicabo dolores hic vitae? Veritatis similique, commodi provident sit voluptas hic officiis
+                        voluptatum consequuntur ab laboriosam rem ullam quisquam ut sint dolore fugiat nulla ipsum modi
+                        tempore. Fugit officiis eligendi a, autem quo vel sint doloribus nostrum optio nihil animi ad,
+                        quidem mollitia totam? Beatae inventore aliquam in veniam, perferendis molestiae rerum assumenda
+                        illum amet officia? Ut, aut sequi optio corrupti fugiat officia labore porro veritatis suscipit
+                        molestias amet iste iusto ipsa rerum tenetur culpa sunt ab dolor dolores eius voluptate nisi.
+                        Nam commodi inventore hic voluptatem quaerat quia vero doloribus, in error, neque quod
+                        dignissimos id est assumenda exercitationem sit aut.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <img src="images/app-store.png">
+                <p>Download our app from playstore</p>
+            </div>
+            <div class="footer-col-2">
+                <img src="images/logo-white.png">
+                <p>Our Purpose is to sustainably make the pleasure and benefits of sports accessible to the many</p>
+            </div>
+            <div class="footer-col-3">
+                <h2>Useful Links</h2>
+                <ul class="lists">
+                    <li>Coupons</li>
+                    <li>Blog Post</li>
+                    <li>Return Policy</li>
+                    <li>Join Affiliate</li>
+                </ul>
+            </div>
+            <div class="footer-col-4">
+                <h2>Follow Us</h2>
+                <ul>
+                    <li>Facebook</li>
+                    <li>Twitter</li>
+                    <li>Instagram</li>
+                    <li>You Tube</li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright &copy; Red Store - 2022</p>
+        </div>
+    </footer>
+
+    <!-- SCROLL BTN -->
+    <div class="scroll" id="scroll-btn">
+        <div class="scroll-btn"></div>
+    </div>
+
+
+    <script>
+
+        var navbar = document.querySelector('.navbar')
+        var scroll_btn = document.getElementById('scroll-btn')
+
+        window.onscroll = () => {
+            if (window.scrollY >= 10) {
+                navbar.style.backgroundColor = "#fff";
+                scroll_btn.style.opacity = '1';
+            }
+            else {
+                navbar.style.backgroundColor = "";
+                scroll_btn.style.opacity = '0';
+            }
+        }
+
+        var lists = document.getElementById('lists')
+        var menu_icon = document.getElementById('menu-icon')
+        var close_icon = document.getElementById('close-icon')
+
+        function openMenu() {
+            lists.style.height = "240px"
+            menu_icon.style.display = "none"
+            close_icon.style.display = "inline-block"
+        }
+
+        function closeMenu() {
+            lists.style.height = "0"
+            menu_icon.style.display = "inline-block"
+            close_icon.style.display = "none"
+        }
+
+        scroll_btn.onclick = () => {
+            document.documentElement.scrollTop = 0;
+        }
+
+        function openCart() {
+            window.open('cart.html')
+        }
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,126 @@
+.cart {
+    width: 100%;
+    margin: 110px auto;
+}
+
+.cart table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.header {
+    background: #FD841F;
+}
+
+th {
+    font-size: 20px;
+    padding: 10px;
+}
+
+th,
+td {
+    padding: 8px 0;
+}
+
+.info {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.info .image {
+    width: 98px;
+    margin-right: 18px;
+}
+
+.image img {
+    width: 100%;
+    border-radius: 50%;
+    box-shadow: 0 4px 12px #D6E4E5;
+}
+
+.details p:first-child {
+    font-size: 22px;
+    font-weight: bold;
+    margin: 8px 0;
+}
+
+.details p:nth-child(2) {
+    margin: 0 0 6px;
+}
+
+.details a {
+    color: #FD841F;
+}
+
+.stuffs {
+    text-align: center;
+}
+
+.stuffs input {
+    width: 50px;
+    border: 0;
+    outline: 0;
+    border: 2px solid #FD841F;
+    padding: 8px;
+}
+
+.stuffs p {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.line {
+    position: absolute;
+    right: 10%;
+    top: 70%;
+    width: 30%;
+    height: 2px;
+    background-color: #FD841F;
+}
+
+.total-price {
+    padding-right: 10%;
+    float: right;
+    margin-top: -170px;
+    margin-bottom: 40px;
+}
+
+.total-price table {
+    border-top: 2px solid #FD841F;
+    padding: 20px;
+    width: 390px;
+    font-size: 18px;
+}
+
+.total-price td:first-child {
+    width: 250px;
+}
+
+.total {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+@media only screen and (max-width:800px) {
+    .info .image {
+        width: 80px;
+    }
+
+    .total-price {
+        float: none;
+        padding-right: 0;
+        margin: -120px 0 0 20px
+    }
+
+    .line {
+        width: 100%;
+        top: 88%;
+        right: 0;
+    }
+
+    .total-price table {
+        width: 100%;
+        padding-bottom: 30px;
+    }
+
+}
